@@ -1,8 +1,9 @@
+import banner from "/src/assets/banner.jpg"
 
 const Header = () => {
   return (
    <div style={{background:'white'}}>
-    <img src="/src/assets/banner.jpg" alt="banner" style={{width:'100%'}}/>
+    <img src={banner} alt="banner" style={{width:'100%'}}/>
    </div>
   )
 }

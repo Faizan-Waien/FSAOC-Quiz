@@ -9,6 +9,8 @@ import { quiz1, quiz2, quiz3, quiz4, quiz5, quiz6, quiz7 } from './Questions'
 import Register from './Register';
 import { useContxt } from './Context';
 import { Avatar } from '@mui/material';
+import icon1 from "/src/assets/male.jpg"
+import icon2 from "/src/assets/female.jpg"
 
 function TabPanel(props) {
 
@@ -75,7 +77,7 @@ export default function QuizTabs() {
         >
           <Tab
             label={<Typography sx={{ color: '343d44', fontWeight: 'bold' }}>{loginName ? `${loginName}` : 'Home'}</Typography>}
-            icon={loginName && <Avatar alt="icon" src={(loginGender === 'male') ? "/src/assets/male.jpg" : "/src/assets/female.jpg"} sx={{ width: 60, height: 60 }} />}
+            icon={loginName && <Avatar alt="icon" src={(loginGender === 'male') ? icon1 : icon2} sx={{ width: 60, height: 60 }} />}
             {...a11yProps(0)}
             sx={{ bgcolor: 'whitesmoke', border:'2px solid #e0e0e0' }} />
 
